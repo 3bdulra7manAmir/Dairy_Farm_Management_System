@@ -60,7 +60,7 @@
             // 
             this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
             this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(0, 690);
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(-1, 788);
             this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuProgressBar1.MaximumValue = 100;
             this.bunifuProgressBar1.Name = "bunifuProgressBar1";
@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.ClientSize = new System.Drawing.Size(1280, 700);
+            this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.bunifuProgressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
