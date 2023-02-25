@@ -108,6 +108,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(557, 289);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -122,6 +123,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(557, 369);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -131,38 +133,38 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(52, 172);
+            this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(41, 251);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 44);
+            this.label4.Size = new System.Drawing.Size(196, 37);
             this.label4.TabIndex = 9;
-            this.label4.Text = "User Name";
+            this.label4.Text = "Nice Quality";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(52, 274);
+            this.label5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(41, 316);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 44);
+            this.label5.Size = new System.Drawing.Size(204, 37);
             this.label5.TabIndex = 10;
-            this.label5.Text = "User Name";
+            this.label5.Text = "Echo friendly";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(52, 373);
+            this.label6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(41, 385);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(212, 44);
+            this.label6.Size = new System.Drawing.Size(234, 37);
             this.label6.TabIndex = 11;
-            this.label6.Text = "User Name";
+            this.label6.Text = "Professionalism";
             // 
             // comboBox1
             // 
@@ -171,10 +173,11 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Admin",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(418, 189);
+            this.comboBox1.Location = new System.Drawing.Point(352, 171);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(242, 45);
+            this.comboBox1.Size = new System.Drawing.Size(254, 45);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "Select Role";
             // 
             // button1
             // 
@@ -194,11 +197,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(650, 587);
+            this.label7.Location = new System.Drawing.Point(660, 591);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 44);
+            this.label7.Size = new System.Drawing.Size(95, 37);
             this.label7.TabIndex = 11;
             this.label7.Text = "Reset";
             // 
