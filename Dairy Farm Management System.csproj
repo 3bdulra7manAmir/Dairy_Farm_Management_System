@@ -94,6 +94,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DairyFarmManagementSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance.Designer.cs">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
