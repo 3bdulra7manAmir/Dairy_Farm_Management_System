@@ -141,6 +141,9 @@
     <EmbeddedResource Include="CowsHealth.resx">
       <DependentUpon>CowsHealth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
     </EmbeddedResource>
