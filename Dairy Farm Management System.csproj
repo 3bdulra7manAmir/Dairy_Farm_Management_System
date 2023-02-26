@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Breeing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Breeing.Designer.cs">
+      <DependentUpon>Breeing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cows.cs">
       <SubType>Form</SubType>
     </Compile>
