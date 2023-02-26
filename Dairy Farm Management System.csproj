@@ -94,6 +94,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DairyFarmManagementSystemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Finance.cs">
       <SubType>Form</SubType>
     </Compile>
