@@ -120,6 +120,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Breeing.resx">
+      <DependentUpon>Breeing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cows.resx">
       <DependentUpon>Cows.cs</DependentUpon>
     </EmbeddedResource>
