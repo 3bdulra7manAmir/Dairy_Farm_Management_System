@@ -65,5 +65,19 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Cows obj = new Cows();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            MilkProduction obj = new MilkProduction();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
