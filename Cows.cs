@@ -78,7 +78,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into CowTbl values ('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "',,'" + BreedTb.Text + "'," + age + "," + WeigthTb.Text + ",'" + PastureTb.Text + "')";
+                    string Query = "insert into CowTbl values ('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreedTb.Text + "'," + age + "," + WeigthTb.Text + ",'" + PastureTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved Successfully");
