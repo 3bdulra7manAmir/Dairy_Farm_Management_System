@@ -520,6 +520,7 @@
             this.DOBDate.Size = new System.Drawing.Size(267, 31);
             this.DOBDate.TabIndex = 19;
             this.DOBDate.ValueChanged += new System.EventHandler(this.DOBDate_ValueChanged);
+            this.DOBDate.MouseLeave += new System.EventHandler(this.DOBDate_MouseLeave);
             // 
             // label9
             // 
@@ -600,6 +601,7 @@
             // AgeTb
             // 
             this.AgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeTb.Enabled = false;
             this.AgeTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.AgeTb.HintForeColor = System.Drawing.Color.Empty;
