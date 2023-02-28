@@ -126,6 +126,7 @@ namespace Dairy_Farm_Management_System
             WeigthTb.Text = "";
             AgeTb.Text = "";
             PastureTb.Text = "";
+            key = 0;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -151,6 +152,58 @@ namespace Dairy_Farm_Management_System
             {
                 key = Convert.ToInt32(CowsDGV.SelectedRows[0].Cells[0].Value.ToString());
                 age = Convert.ToInt32(CowsDGV.SelectedRows[0].Cells[5].Value.ToString());
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Cow To Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "delete from CowTbl where CowId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (CowNameTb.Text == "" || EarTagTb.Text == "" || ColorTb.Text == "" || BreedTb.Text == "" || WeigthTb.Text == "" || AgeTb.Text == "" || PastureTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "update CowTbl set CowName='"+CowNameTb.Text+"',EarTag='"+EarTagTb.Text+"',Color='"+ColorTb.Text+"',Breed='"+BreedTb.Text+"',Age=" + age + ",weigthatbirth=" + WeigthTb.Text + ",Pasture='" + PastureTb.Text + "' where CowId = "+ key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Updated Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
             }
         }
     }
