@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
         public Cows()
         {
             InitializeComponent();
+            populate();
         }
         SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
         private void label4_Click(object sender, EventArgs e)
@@ -83,6 +84,8 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved Successfully");
                     COn.Close();
+                    populate();
+                    Clear();
                 }
                 catch(Exception Ex)
                 {
@@ -100,6 +103,55 @@ namespace Dairy_Farm_Management_System
         {
             AgeTb.Text = "" + age;
             age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
+        }
+
+        private void populate()
+        {
+            //P Here
+            COn.Open();
+            string query = "select * from CowTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowsDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EarTagTb.Text = "";
+            ColorTb.Text = "";
+            BreedTb.Text = "";
+            WeigthTb.Text = "";
+            AgeTb.Text = "";
+            PastureTb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+        int key = 0;
+        private void CowsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CowNameTb.Text = CowsDGV.SelectedRows[0].Cells[1].Value.ToString();
+            EarTagTb.Text = CowsDGV.SelectedRows[0].Cells[2].Value.ToString();
+            ColorTb.Text = CowsDGV.SelectedRows[0].Cells[3].Value.ToString();
+            BreedTb.Text = CowsDGV.SelectedRows[0].Cells[4].Value.ToString();
+            WeigthTb.Text = CowsDGV.SelectedRows[0].Cells[5].Value.ToString();
+            AgeTb.Text = CowsDGV.SelectedRows[0].Cells[6].Value.ToString();
+            PastureTb.Text = CowsDGV.SelectedRows[0].Cells[7].Value.ToString();
+            if(CowNameTb.Text == "")
+            {
+                key = 0;
+                age = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(CowsDGV.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(CowsDGV.SelectedRows[0].Cells[5].Value.ToString());
+            }
         }
     }
 }
