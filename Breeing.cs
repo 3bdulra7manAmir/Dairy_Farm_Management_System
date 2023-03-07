@@ -123,9 +123,16 @@ namespace Dairy_Farm_Management_System
             GetCowName();
         }
 
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            RemarksTb.Text = "";
+            CowAge.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAge.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAge.Text == "")
             {
                 MessageBox.Show("Missing Data!");
             }
@@ -134,10 +141,10 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into HealthTbl values ('" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + Date.Value.Date + "','" + EventTb.Text + "'," + DiagnosisTb.Text + "," + TreatmentTb.Text + ",'" + CostTb.Text + ",'" + VetNameTb.Text + "')";
+                    string Query = "insert into HealthTbl values ('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "'," + PregDate.Value.Date + "," + ExpDate.Value.Date+ ",'" + DateCalved.Value.Date + ",'" + CowAge.Text + ",'" + RemarksTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Health issue Saved Successfully");
+                    MessageBox.Show("Breeding Report Saved Successfully");
                     COn.Close();
                     populate();
                     Clear();
