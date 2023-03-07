@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,54 @@ namespace Dairy_Farm_Management_System
             DashBoard obj = new DashBoard();
             obj.Show();
             this.Hide();
+        }
+
+        SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
+        private void FillCowId()
+        {
+            COn.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from CowTbl", COn);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DataSource = dt;
+            COn.Close();
+        }
+
+        private void populate()
+        {
+            //P Here
+            COn.Open();
+            string query = "select * from HealthTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealthDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
+
+        private void GetCowName()
+        {
+            COn.Open();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, COn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+            COn.Close();
+        }
+
+        private void Breeing_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
