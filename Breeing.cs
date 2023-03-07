@@ -224,7 +224,7 @@ namespace Dairy_Farm_Management_System
                     string Query = "update BreedTbl set HeatDate=" + HeatDate.Value.Date + "',BreedDate='" + BreedDate.Value.Date + "',CowId='" + CowIdCb.SelectedValue.ToString() + ",CowName='" + CowNameTb.Text + "',PregDate='" + PregDate.Value.Date + "',ExpDateCalve='" + ExpDate.Value.Date + "',DateCalved='" + DateCalved.Value.Date + ",CowAge='" + CowAge.Text + ",Remarks='" + RemarksTb.Text + "' where BrId= " + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Updated Successfully");
+                    MessageBox.Show("Breeding Updated Successfully");
                     COn.Close();
                     populate();
                     Clear();
