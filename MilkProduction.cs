@@ -156,5 +156,10 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
+        }
     }
 }
