@@ -47,9 +47,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.noonTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.NoonTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Amt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AmTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.CowsNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -339,24 +339,24 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Noon Milk";
             // 
-            // noonTb
+            // NoonTb
             // 
-            this.noonTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.noonTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noonTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.noonTb.HintForeColor = System.Drawing.Color.Empty;
-            this.noonTb.HintText = "";
-            this.noonTb.isPassword = false;
-            this.noonTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.noonTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.noonTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.noonTb.LineThickness = 3;
-            this.noonTb.Location = new System.Drawing.Point(328, 211);
-            this.noonTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.noonTb.Name = "noonTb";
-            this.noonTb.Size = new System.Drawing.Size(267, 36);
-            this.noonTb.TabIndex = 42;
-            this.noonTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NoonTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NoonTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoonTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NoonTb.HintForeColor = System.Drawing.Color.Empty;
+            this.NoonTb.HintText = "";
+            this.NoonTb.isPassword = false;
+            this.NoonTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.NoonTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.NoonTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.NoonTb.LineThickness = 3;
+            this.NoonTb.Location = new System.Drawing.Point(328, 211);
+            this.NoonTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.NoonTb.Name = "NoonTb";
+            this.NoonTb.Size = new System.Drawing.Size(267, 36);
+            this.NoonTb.TabIndex = 42;
+            this.NoonTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label7
             // 
@@ -370,24 +370,24 @@
             this.label7.TabIndex = 41;
             this.label7.Text = "Am Milk";
             // 
-            // Amt
+            // AmTb
             // 
-            this.Amt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Amt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Amt.HintForeColor = System.Drawing.Color.Empty;
-            this.Amt.HintText = "";
-            this.Amt.isPassword = false;
-            this.Amt.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.Amt.LineIdleColor = System.Drawing.Color.Gray;
-            this.Amt.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.Amt.LineThickness = 3;
-            this.Amt.Location = new System.Drawing.Point(929, 130);
-            this.Amt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Amt.Name = "Amt";
-            this.Amt.Size = new System.Drawing.Size(267, 36);
-            this.Amt.TabIndex = 40;
-            this.Amt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AmTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AmTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AmTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AmTb.HintText = "";
+            this.AmTb.isPassword = false;
+            this.AmTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.AmTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AmTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.AmTb.LineThickness = 3;
+            this.AmTb.Location = new System.Drawing.Point(929, 130);
+            this.AmTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.AmTb.Name = "AmTb";
+            this.AmTb.Size = new System.Drawing.Size(267, 36);
+            this.AmTb.TabIndex = 40;
+            this.AmTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -737,9 +737,9 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.noonTb);
+            this.Controls.Add(this.NoonTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Amt);
+            this.Controls.Add(this.AmTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CowsNameTb);
             this.Controls.Add(this.label2);
@@ -798,9 +798,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox noonTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox NoonTb;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Amt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AmTb;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CowsNameTb;
         private System.Windows.Forms.Label label2;

@@ -85,7 +85,28 @@ namespace Dairy_Farm_Management_System
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCb.SelectedIndex == -1 || CowsNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "insert into MilkTbl values ('" + CowIdCb.SelectedValue.ToString() + "','" + CowsNameTb.Text + "','" + AmTb.Text + "','" + NoonTb.Text + "'," + PmTb.Text + "," + TotalTb.Text + ",'" + Date.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved Successfully");
+                    COn.Close();
+                    //populate();
+                    //Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
