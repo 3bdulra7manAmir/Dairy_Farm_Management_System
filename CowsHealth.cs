@@ -172,5 +172,10 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+        int key = 0;
+        private void HealthDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
