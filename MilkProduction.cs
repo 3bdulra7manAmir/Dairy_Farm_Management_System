@@ -113,7 +113,7 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Milk Saved Successfully");
                     COn.Close();
-                    //populate();
+                    populate();
                     //Clear();
                 }
                 catch (Exception Ex)
