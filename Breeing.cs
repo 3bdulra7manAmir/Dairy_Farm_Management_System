@@ -183,5 +183,31 @@ namespace Dairy_Farm_Management_System
                 key = Convert.ToInt32(BreedDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Breed Report Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "delete from BreedTbl where BrId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed Deleted Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
