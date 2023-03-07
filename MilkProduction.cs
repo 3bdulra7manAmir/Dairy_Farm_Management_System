@@ -69,6 +69,19 @@ namespace Dairy_Farm_Management_System
 
 
         SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
+        private void FillCowId()
+        {
+            COn.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from CowTbl", COn);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DataSource = dt;
+            COn.Close();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
