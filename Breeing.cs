@@ -161,5 +161,26 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+        int key = 0;
+        private void BreedDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            HeatDate.Text = BreedDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = BreedDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CowIdCb.SelectedValue = BreedDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CowNameTb.Text = BreedDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PregDate.Text = BreedDGV.SelectedRows[0].Cells[5].Value.ToString();
+            ExpDate.Text = BreedDGV.SelectedRows[0].Cells[6].Value.ToString();
+            DateCalved.Text = BreedDGV.SelectedRows[0].Cells[7].Value.ToString();
+            CowAge.Text = BreedDGV.SelectedRows[0].Cells[8].Value.ToString();
+            RemarksTb.Text = BreedDGV.SelectedRows[0].Cells[9].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(BreedDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
