@@ -93,7 +93,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            CowsDGV.DataSource = ds.Tables[0];
+            MilkDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
 
@@ -121,6 +121,11 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void MilkDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
