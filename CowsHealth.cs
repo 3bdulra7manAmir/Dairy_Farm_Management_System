@@ -176,7 +176,22 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void HealthDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            CowIdCb.SelectedValue = HealthDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = HealthDGV.SelectedRows[0].Cells[2].Value.ToString();
+            Date.Text = HealthDGV.SelectedRows[0].Cells[3].Value.ToString();
+            EventTb.Text = HealthDGV.SelectedRows[0].Cells[4].Value.ToString();
+            DiagnosisTb.Text = HealthDGV.SelectedRows[0].Cells[5].Value.ToString();
+            TreatmentTb.Text = HealthDGV.SelectedRows[0].Cells[6].Value.ToString();
+            CostTb.Text = HealthDGV.SelectedRows[0].Cells[7].Value.ToString();
+            VetNameTb.Text = HealthDGV.SelectedRows[0].Cells[8].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(HealthDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
