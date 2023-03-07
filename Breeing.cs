@@ -97,7 +97,7 @@ namespace Dairy_Farm_Management_System
             BreedDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
-
+        string Cow_Age;
         private void GetCowName()
         {
             COn.Open();
@@ -109,6 +109,7 @@ namespace Dairy_Farm_Management_System
             foreach (DataRow dr in dt.Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
+                CowNameTb.Text = dr["Age"].ToString();
             }
             COn.Close();
         }
@@ -129,7 +130,7 @@ namespace Dairy_Farm_Management_System
             RemarksTb.Text = "";
             CowAge.Text = "";
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAge.Text == "")
