@@ -83,6 +83,20 @@ namespace Dairy_Farm_Management_System
             CowIdCb.DataSource = dt;
             COn.Close();
         }
+
+        private void populate()
+        {
+            //P Here
+            COn.Open();
+            string query = "select * from MilkTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowsDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowsNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
@@ -97,7 +111,7 @@ namespace Dairy_Farm_Management_System
                     string Query = "insert into MilkTbl values ('" + CowIdCb.SelectedValue.ToString() + "','" + CowsNameTb.Text + "','" + AmTb.Text + "','" + NoonTb.Text + "'," + PmTb.Text + "," + TotalTb.Text + ",'" + Date.Value.Date + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cow Saved Successfully");
+                    MessageBox.Show("Milk Saved Successfully");
                     COn.Close();
                     //populate();
                     //Clear();
