@@ -122,6 +122,14 @@ namespace Dairy_Farm_Management_System
             GetCowName();
         }
 
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EventTb.Text = "";
+            CostTb.Text = "";
+            DiagnosisTb.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
@@ -139,7 +147,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Health issue Saved Successfully");
                     COn.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception Ex)
                 {
