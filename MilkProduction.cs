@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Resources.ResXFileRef;
 
 namespace Dairy_Farm_Management_System
 {
@@ -146,10 +147,24 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
-
+        int key = 0;
         private void MilkDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            CowIdCb.SelectedValue = MilkDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowsNameTb.Text = MilkDGV.SelectedRows[0].Cells[2].Value.ToString();
+            AmTb.Text = MilkDGV.SelectedRows[0].Cells[3].Value.ToString();
+            NoonTb.Text = MilkDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PmTb.Text = MilkDGV.SelectedRows[0].Cells[5].Value.ToString();
+            TotalTb.Text = MilkDGV.SelectedRows[0].Cells[6].Value.ToString();
+            Date.Text = MilkDGV.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowsNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(MilkDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -160,6 +175,17 @@ namespace Dairy_Farm_Management_System
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetCowName();
+        }
+
+        private void PmTb_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void PmTb_OnValueChanged(object sender, EventArgs e)
+        {
+            int Total = Convert.ToInt32(AmTb.Text) + Convert.ToInt32(PmTb.Text);
+            TotalTb.Text = "" + Total;
         }
     }
 }
