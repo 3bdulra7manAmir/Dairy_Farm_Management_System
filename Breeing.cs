@@ -97,7 +97,7 @@ namespace Dairy_Farm_Management_System
             BreedDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
-        string Cow_Age;
+        //string Cow_Age;
         private void GetCowName()
         {
             COn.Open();
@@ -109,7 +109,7 @@ namespace Dairy_Farm_Management_System
             foreach (DataRow dr in dt.Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
-                CowNameTb.Text = dr["Age"].ToString();
+                CowAge.Text = dr["Age"].ToString();
             }
             COn.Close();
         }
@@ -142,7 +142,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into HealthTbl values ('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "'," + PregDate.Value.Date + "," + ExpDate.Value.Date+ ",'" + DateCalved.Value.Date + ",'" + CowAge.Text + ",'" + RemarksTb.Text + "')";
+                    string Query = "insert into BreedTbl values ('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "'," + PregDate.Value.Date + "," + ExpDate.Value.Date+ ",'" + DateCalved.Value.Date + ",'" + CowAge.Text + ",'" + RemarksTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Breeding Report Saved Successfully");
