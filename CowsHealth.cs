@@ -97,9 +97,29 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
+        private void GetCowName()
+        {
+            COn.Open();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, COn);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+            COn.Close();
+        }
+
         private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            Ge
         }
     }
 }
