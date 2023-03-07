@@ -86,12 +86,12 @@ namespace Dairy_Farm_Management_System
         {
             //P Here
             COn.Open();
-            string query = "select * from HealthTbl";
+            string query = "select * from BreedTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, COn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            HealthDGV.DataSource = ds.Tables[0];
+            BreedDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
 
