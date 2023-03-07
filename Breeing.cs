@@ -209,5 +209,31 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAge.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "update BreedTbl set HeatDate=" + HeatDate.Value.Date + "',BreedDate='" + BreedDate.Value.Date + "',CowId='" + CowIdCb.SelectedValue.ToString() + ",CowName='" + CowNameTb.Text + "',PregDate='" + PregDate.Value.Date + "',ExpDateCalve='" + ExpDate.Value.Date + "',DateCalved='" + DateCalved.Value.Date + ",CowAge='" + CowAge.Text + ",Remarks='" + RemarksTb.Text + "' where BrId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
