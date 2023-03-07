@@ -130,6 +130,7 @@ namespace Dairy_Farm_Management_System
             DiagnosisTb.Text = "";
             VetNameTb.Text = "";
             TreatmentTb.Text = "";
+            key = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
