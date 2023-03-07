@@ -97,6 +97,15 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
+        private void Clear()
+        {
+            CowsNameTb.Text = "";
+            AmTb.Text = "";
+            NoonTb.Text = "";
+            PmTb.Text = "";
+            TotalTb.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowsNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
