@@ -105,6 +105,7 @@ namespace Dairy_Farm_Management_System
             NoonTb.Text = "";
             PmTb.Text = "";
             TotalTb.Text = "";
+            key = 0;
         }
 
         private void GetCowName()
@@ -186,6 +187,32 @@ namespace Dairy_Farm_Management_System
         {
             int Total = Convert.ToInt32(AmTb.Text) + Convert.ToInt32(PmTb.Text);
             TotalTb.Text = "" + Total;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Milk Product To Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "delete from MilkTbl where MId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Deleted Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
