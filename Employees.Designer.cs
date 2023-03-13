@@ -36,7 +36,7 @@
             this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Date = new System.Windows.Forms.DateTimePicker();
+            this.DOB = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -105,14 +105,14 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "DFSM";
             // 
-            // Date
+            // DOB
             // 
-            this.Date.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Date.Location = new System.Drawing.Point(650, 135);
-            this.Date.Name = "Date";
-            this.Date.Size = new System.Drawing.Size(267, 31);
-            this.Date.TabIndex = 88;
+            this.DOB.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOB.Location = new System.Drawing.Point(650, 135);
+            this.DOB.Name = "DOB";
+            this.DOB.Size = new System.Drawing.Size(267, 31);
+            this.DOB.TabIndex = 88;
             // 
             // label19
             // 
@@ -392,7 +392,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.Date);
+            this.Controls.Add(this.DOB);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -429,7 +429,7 @@
         private System.Windows.Forms.ComboBox CowIdCb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker Date;
+        private System.Windows.Forms.DateTimePicker DOB;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
