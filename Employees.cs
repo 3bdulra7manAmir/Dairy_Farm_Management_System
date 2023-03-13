@@ -91,5 +91,31 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select an Employee to Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "delete from EmployeeTbl where EmpId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Deleted Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
