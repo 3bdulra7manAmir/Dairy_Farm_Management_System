@@ -58,7 +58,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.QuantityTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label19 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -385,24 +385,24 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "DFSM";
             // 
-            // bunifuMaterialTextbox1
+            // QuantityTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(627, 211);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(267, 36);
-            this.bunifuMaterialTextbox1.TabIndex = 83;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QuantityTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.QuantityTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.QuantityTb.HintForeColor = System.Drawing.Color.Empty;
+            this.QuantityTb.HintText = "";
+            this.QuantityTb.isPassword = false;
+            this.QuantityTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.QuantityTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.QuantityTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.QuantityTb.LineThickness = 3;
+            this.QuantityTb.Location = new System.Drawing.Point(627, 211);
+            this.QuantityTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.QuantityTb.Name = "QuantityTb";
+            this.QuantityTb.Size = new System.Drawing.Size(267, 36);
+            this.QuantityTb.TabIndex = 83;
+            this.QuantityTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label19
             // 
@@ -703,7 +703,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.QuantityTb);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -785,7 +785,7 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox QuantityTb;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
