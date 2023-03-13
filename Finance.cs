@@ -68,25 +68,12 @@ namespace Dairy_Farm_Management_System
             this.Hide();
         }
         SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
-        private void FillEmpId()
-        {
-            COn.Open();
-            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", COn);
-            SqlDataReader Rdr;
-            Rdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("EmpId", typeof(int));
-            dt.Load(Rdr);
-            EmpIdCb.ValueMember = "EmpId";
-            EmpIdCb.DataSource = dt;
-            COn.Close();
-        }
 
         private void populateExp()
         {
             //P Here
             COn.Open();
-            string query = "select * from ExpenditureTbl";
+            string query = "select * from ExpenditrueTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, COn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -111,7 +98,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdLbl.Text + "')";
+                    string Query = "insert into ExpenditrueTbl values ('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdLbl.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expenditure Saved Successfully");
