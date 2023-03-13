@@ -568,6 +568,7 @@
             this.SalesDGV.ThemeStyle.RowsStyle.Height = 26;
             this.SalesDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SalesDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalesDGV_CellContentClick);
             // 
             // label9
             // 

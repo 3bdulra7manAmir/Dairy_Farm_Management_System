@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,21 @@ namespace Dairy_Farm_Management_System
         public MilkSales()
         {
             InitializeComponent();
+        }
+
+        SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
+        private void FillCowId()
+        {
+            COn.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", COn);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "EmpId";
+            CowIdCb.DataSource = dt;
+            COn.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -64,6 +80,11 @@ namespace Dairy_Farm_Management_System
             DashBoard obj = new DashBoard();
             obj.Show();
             this.Hide();
+        }
+
+        private void SalesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
