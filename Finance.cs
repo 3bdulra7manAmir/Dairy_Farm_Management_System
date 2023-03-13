@@ -85,12 +85,12 @@ namespace Dairy_Farm_Management_System
         {
             //P Here
             COn.Open();
-            string query = "select * from MilkSalesTbl";
+            string query = "select * from ExpenditureTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, COn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            SalesDGV.DataSource = ds.Tables[0];
+            ExpDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
 
