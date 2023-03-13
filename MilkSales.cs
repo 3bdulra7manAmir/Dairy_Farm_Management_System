@@ -141,5 +141,10 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
