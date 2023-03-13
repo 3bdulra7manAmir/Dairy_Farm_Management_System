@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
         public Finance()
         {
             InitializeComponent();
+            populate();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -111,7 +112,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Milk Sold Successfully");
                     COn.Close();
                     populate();
-                    Clear();
+                    //Clear();
                 }
                 catch (Exception Ex)
                 {
