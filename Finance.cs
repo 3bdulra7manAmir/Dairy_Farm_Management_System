@@ -136,7 +136,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Expenditure Saved Successfully");
                     COn.Close();
                     populateExp();
-                    //ClearInc();
+                    ClearInc();
                 }
                 catch (Exception Ex)
                 {
