@@ -114,7 +114,7 @@ namespace Dairy_Farm_Management_System
                     string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdLbl.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Milk Sold Successfully");
+                    MessageBox.Show("Expenditure Saved Successfully");
                     COn.Close();
                     populateExp();
                     //Clear();
