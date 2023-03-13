@@ -86,6 +86,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.EmpIdLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -802,12 +803,25 @@
             this.label20.TabIndex = 141;
             this.label20.Text = "Incomes";
             // 
+            // EmpIdLbl
+            // 
+            this.EmpIdLbl.AutoSize = true;
+            this.EmpIdLbl.BackColor = System.Drawing.Color.White;
+            this.EmpIdLbl.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpIdLbl.ForeColor = System.Drawing.Color.DimGray;
+            this.EmpIdLbl.Location = new System.Drawing.Point(1158, 42);
+            this.EmpIdLbl.Name = "EmpIdLbl";
+            this.EmpIdLbl.Size = new System.Drawing.Size(110, 37);
+            this.EmpIdLbl.TabIndex = 151;
+            this.EmpIdLbl.Text = "EmpId";
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 800);
+            this.Controls.Add(this.EmpIdLbl);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -907,5 +921,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label EmpIdLbl;
     }
 }

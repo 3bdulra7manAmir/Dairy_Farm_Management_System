@@ -82,7 +82,7 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
-        private void populate()
+        private void populateExp()
         {
             //P Here
             COn.Open();
@@ -93,6 +93,11 @@ namespace Dairy_Farm_Management_System
             sda.Fill(ds);
             ExpDGV.DataSource = ds.Tables[0];
             COn.Close();
+        }
+
+        private void Clear()
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -106,12 +111,12 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into MilkSalesTbl values ('" + Date.Value.Date + "','" + PriceTb.Text + "','" + ClientNameTb.Text + "','" + PhoneTb.Text + "'," + EmpIdCb.SelectedValue.ToString() + "," + QuantityTb.Text + ",'" + TotalTb.Text + "')";
+                    string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdLbl.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Milk Sold Successfully");
                     COn.Close();
-                    populate();
+                    populateExp();
                     //Clear();
                 }
                 catch (Exception Ex)
