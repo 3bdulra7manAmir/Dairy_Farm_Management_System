@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.label12 = new System.Windows.Forms.Label();
-            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.GenCb = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.DOB = new System.Windows.Forms.DateTimePicker();
@@ -72,17 +72,17 @@
             this.label12.TabIndex = 89;
             this.label12.Text = "DOB";
             // 
-            // CowIdCb
+            // GenCb
             // 
-            this.CowIdCb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CowIdCb.FormattingEnabled = true;
-            this.CowIdCb.Items.AddRange(new object[] {
+            this.GenCb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.CowIdCb.Location = new System.Drawing.Point(978, 122);
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(267, 44);
-            this.CowIdCb.TabIndex = 86;
+            this.GenCb.Location = new System.Drawing.Point(978, 122);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(267, 44);
+            this.GenCb.TabIndex = 86;
             // 
             // guna2GradientPanel1
             // 
@@ -390,7 +390,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.GenCb);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.DOB);
             this.Controls.Add(this.label19);
@@ -426,7 +426,7 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.ComboBox GenCb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker DOB;
