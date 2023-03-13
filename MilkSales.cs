@@ -19,7 +19,7 @@ namespace Dairy_Farm_Management_System
         }
 
         SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
-        private void FillCowId()
+        private void FillEmpId()
         {
             COn.Open();
             SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", COn);
