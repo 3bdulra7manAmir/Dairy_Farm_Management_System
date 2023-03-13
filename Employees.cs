@@ -86,5 +86,10 @@ namespace Dairy_Farm_Management_System
                 key = Convert.ToInt32(EmployeesDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
