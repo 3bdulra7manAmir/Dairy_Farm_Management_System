@@ -17,6 +17,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             populateExp();
+            populateInc();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -91,7 +92,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            ExpDGV.DataSource = ds.Tables[0];
+            IncDGV.DataSource = ds.Tables[0];
             COn.Close();
         }
 
