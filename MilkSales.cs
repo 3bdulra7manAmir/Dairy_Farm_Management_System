@@ -34,6 +34,19 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
+        private void populate()
+        {
+            //P Here
+            COn.Open();
+            string query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            SalesDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
+
         private void label4_Click(object sender, EventArgs e)
         {
             Cows obj = new Cows();
@@ -92,6 +105,32 @@ namespace Dairy_Farm_Management_System
         {
             int Total = Convert.ToInt32(PriceTb.Text) + Convert.ToInt32(QuantityTb.Text);
             TotalTb.Text = "" + Total;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowsNameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || NoonTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "insert into MilkTbl values ('" + CowIdCb.SelectedValue.ToString() + "','" + CowsNameTb.Text + "','" + AmTb.Text + "','" + NoonTb.Text + "'," + PmTb.Text + "," + TotalTb.Text + ",'" + Date.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Milk Saved Successfully");
+                    COn.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
