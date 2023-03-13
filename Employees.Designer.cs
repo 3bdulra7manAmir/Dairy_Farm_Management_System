@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.label12 = new System.Windows.Forms.Label();
-            this.TreatmentTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,10 +43,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.VetNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.CostTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.EmployeesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.DiagnosisTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -59,7 +54,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeesDGV)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,30 +66,11 @@
             this.label12.BackColor = System.Drawing.SystemColors.Control;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(626, 96);
+            this.label12.Location = new System.Drawing.Point(646, 96);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 23);
             this.label12.TabIndex = 89;
             this.label12.Text = "DOB";
-            // 
-            // TreatmentTb
-            // 
-            this.TreatmentTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TreatmentTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TreatmentTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TreatmentTb.HintForeColor = System.Drawing.Color.Empty;
-            this.TreatmentTb.HintText = "";
-            this.TreatmentTb.isPassword = false;
-            this.TreatmentTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.TreatmentTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.TreatmentTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.TreatmentTb.LineThickness = 3;
-            this.TreatmentTb.Location = new System.Drawing.Point(328, 306);
-            this.TreatmentTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.TreatmentTb.Name = "TreatmentTb";
-            this.TreatmentTb.Size = new System.Drawing.Size(267, 36);
-            this.TreatmentTb.TabIndex = 87;
-            this.TreatmentTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // CowIdCb
             // 
@@ -134,7 +109,7 @@
             // 
             this.Date.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Date.Location = new System.Drawing.Point(630, 135);
+            this.Date.Location = new System.Drawing.Point(650, 135);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(267, 31);
             this.Date.TabIndex = 88;
@@ -158,7 +133,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1007, 370);
+            this.button4.Location = new System.Drawing.Point(1027, 379);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(154, 44);
             this.button4.TabIndex = 85;
@@ -172,7 +147,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(802, 370);
+            this.button3.Location = new System.Drawing.Point(822, 379);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(154, 44);
             this.button3.TabIndex = 84;
@@ -186,7 +161,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(601, 370);
+            this.button2.Location = new System.Drawing.Point(621, 379);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(154, 44);
             this.button2.TabIndex = 83;
@@ -200,7 +175,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(396, 370);
+            this.button1.Location = new System.Drawing.Point(416, 379);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 44);
             this.button1.TabIndex = 82;
@@ -213,96 +188,34 @@
             this.label13.BackColor = System.Drawing.SystemColors.Control;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label13.Location = new System.Drawing.Point(978, 434);
+            this.label13.Location = new System.Drawing.Point(720, 434);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(218, 37);
             this.label13.TabIndex = 81;
             this.label13.Text = "Employess List";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(623, 184);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(108, 23);
-            this.label11.TabIndex = 80;
-            this.label11.Text = "Vel Name";
-            // 
-            // VetNameTb
-            // 
-            this.VetNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VetNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VetNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.VetNameTb.HintForeColor = System.Drawing.Color.Empty;
-            this.VetNameTb.HintText = "";
-            this.VetNameTb.isPassword = false;
-            this.VetNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.VetNameTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.VetNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.VetNameTb.LineThickness = 3;
-            this.VetNameTb.Location = new System.Drawing.Point(627, 211);
-            this.VetNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.VetNameTb.Name = "VetNameTb";
-            this.VetNameTb.Size = new System.Drawing.Size(267, 36);
-            this.VetNameTb.TabIndex = 79;
-            this.VetNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(626, 279);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 23);
-            this.label10.TabIndex = 78;
-            this.label10.Text = "Cost of Treatment";
-            // 
-            // CostTb
-            // 
-            this.CostTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CostTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CostTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CostTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CostTb.HintText = "";
-            this.CostTb.isPassword = false;
-            this.CostTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.CostTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CostTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.CostTb.LineThickness = 3;
-            this.CostTb.Location = new System.Drawing.Point(630, 306);
-            this.CostTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.CostTb.Name = "CostTb";
-            this.CostTb.Size = new System.Drawing.Size(267, 36);
-            this.CostTb.TabIndex = 77;
-            this.CostTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // EmployeesDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.EmployeesDGV.ColumnHeadersHeight = 4;
             this.EmployeesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.EmployeesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeesDGV.Location = new System.Drawing.Point(328, 489);
             this.EmployeesDGV.Name = "EmployeesDGV";
@@ -339,7 +252,7 @@
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(324, 184);
+            this.label8.Location = new System.Drawing.Point(484, 184);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 23);
             this.label8.TabIndex = 74;
@@ -357,7 +270,7 @@
             this.DiagnosisTb.LineIdleColor = System.Drawing.Color.Gray;
             this.DiagnosisTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.DiagnosisTb.LineThickness = 3;
-            this.DiagnosisTb.Location = new System.Drawing.Point(328, 211);
+            this.DiagnosisTb.Location = new System.Drawing.Point(488, 211);
             this.DiagnosisTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.DiagnosisTb.Name = "DiagnosisTb";
             this.DiagnosisTb.Size = new System.Drawing.Size(267, 36);
@@ -370,7 +283,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(925, 184);
+            this.label7.Location = new System.Drawing.Point(850, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 23);
             this.label7.TabIndex = 72;
@@ -388,7 +301,7 @@
             this.EventTb.LineIdleColor = System.Drawing.Color.Gray;
             this.EventTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
             this.EventTb.LineThickness = 3;
-            this.EventTb.Location = new System.Drawing.Point(929, 211);
+            this.EventTb.Location = new System.Drawing.Point(854, 211);
             this.EventTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.EventTb.Name = "EventTb";
             this.EventTb.Size = new System.Drawing.Size(267, 36);
@@ -471,26 +384,12 @@
             this.pictureBox8.TabIndex = 15;
             this.pictureBox8.TabStop = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(324, 270);
-            this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label9.Size = new System.Drawing.Size(106, 23);
-            this.label9.TabIndex = 75;
-            this.label9.Text = "Treatment";
-            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.TreatmentTb);
             this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.Date);
@@ -500,10 +399,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.VetNameTb);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.CostTb);
             this.Controls.Add(this.EmployeesDGV);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.DiagnosisTb);
@@ -513,7 +408,6 @@
             this.Controls.Add(this.CowNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -532,7 +426,6 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox TreatmentTb;
         private System.Windows.Forms.ComboBox CowIdCb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label1;
@@ -543,10 +436,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox VetNameTb;
-        private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CostTb;
         private Guna.UI2.WinForms.Guna2DataGridView EmployeesDGV;
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox DiagnosisTb;
@@ -558,6 +447,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label9;
     }
 }
