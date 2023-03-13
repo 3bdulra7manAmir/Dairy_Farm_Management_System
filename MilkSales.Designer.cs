@@ -66,7 +66,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TotalTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -496,24 +496,24 @@
             this.label10.TabIndex = 74;
             this.label10.Text = "Total";
             // 
-            // bunifuMaterialTextbox5
+            // TotalTb
             // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(929, 211);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(267, 36);
-            this.bunifuMaterialTextbox5.TabIndex = 73;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TotalTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TotalTb.HintForeColor = System.Drawing.Color.Empty;
+            this.TotalTb.HintText = "";
+            this.TotalTb.isPassword = false;
+            this.TotalTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.TotalTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.TotalTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.TotalTb.LineThickness = 3;
+            this.TotalTb.Location = new System.Drawing.Point(929, 211);
+            this.TotalTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.TotalTb.Name = "TotalTb";
+            this.TotalTb.Size = new System.Drawing.Size(267, 36);
+            this.TotalTb.TabIndex = 73;
+            this.TotalTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2DataGridView1
             // 
@@ -711,7 +711,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.bunifuMaterialTextbox5);
+            this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -793,7 +793,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TotalTb;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
