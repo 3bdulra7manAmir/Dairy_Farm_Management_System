@@ -107,6 +107,15 @@ namespace Dairy_Farm_Management_System
             TotalTb.Text = "" + Total;
         }
 
+        private void Clear()
+        {
+            PriceTb.Text = "";
+            QuantityTb.Text = "";
+            ClientNameTb.Text = "";
+            PhoneTb.Text = "";
+            TotalTb.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || ClientNameTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
@@ -124,7 +133,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Milk Sold Successfully");
                     COn.Close();
                     populate();
-                    Clear();
+                    //Clear();
                 }
                 catch (Exception Ex)
                 {
