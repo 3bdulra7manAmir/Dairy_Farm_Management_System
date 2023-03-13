@@ -37,7 +37,10 @@ namespace Dairy_Farm_Management_System
 
         private void Clear()
         {
-
+            PhoneTb.Text = "";
+            EmployeesNameTb.Text = "";
+            AddressTb.Text = "";
+            GenCb.SelectedIndex = -1;
         }
 
         private void button1_Click(object sender, EventArgs e)
