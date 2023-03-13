@@ -54,7 +54,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "insert into EmployeeTbl values ('" + EmployeesNameTb.Text + "','" + DOB.Value.Date + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "'," + AddressTb.Text + "')";
+                    string Query = "insert into EmployeeTbl values ('" + EmployeesNameTb.Text + "','" + DOB.Value.Date +  "','" + GenCb.SelectedItem.ToString() + "','"  +  PhoneTb.Text + "','" + AddressTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Saved Successfully");
