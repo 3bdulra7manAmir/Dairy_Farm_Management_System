@@ -66,10 +66,37 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+        SqlConnection COn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Projects\Visual Studio 2022\Dairy Farm Management System\DairyFarmManagementSystem.mdf"";Integrated Security=True;Connect Timeout=30");
+        private void FillEmpId()
+        {
+            COn.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", COn);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
+            COn.Close();
+        }
+
+        private void populate()
+        {
+            //P Here
+            COn.Open();
+            string query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            SalesDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || ClientNameTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
+            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
             {
                 MessageBox.Show("Missing Data!");
             }
