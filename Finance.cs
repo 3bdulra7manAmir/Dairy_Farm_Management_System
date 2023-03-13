@@ -16,7 +16,7 @@ namespace Dairy_Farm_Management_System
         public Finance()
         {
             InitializeComponent();
-            populate();
+            populateExp();
         }
 
         private void label4_Click(object sender, EventArgs e)
