@@ -74,7 +74,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.EmpIdCb = new System.Windows.Forms.ComboBox();
@@ -657,24 +657,24 @@
             this.label3.TabIndex = 66;
             this.label3.Text = "Price";
             // 
-            // Price
+            // PriceTb
             // 
-            this.Price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Price.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Price.HintForeColor = System.Drawing.Color.Empty;
-            this.Price.HintText = "";
-            this.Price.isPassword = false;
-            this.Price.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.Price.LineIdleColor = System.Drawing.Color.Gray;
-            this.Price.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.Price.LineThickness = 3;
-            this.Price.Location = new System.Drawing.Point(661, 245);
-            this.Price.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(267, 36);
-            this.Price.TabIndex = 64;
-            this.Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PriceTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PriceTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PriceTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PriceTb.HintText = "";
+            this.PriceTb.isPassword = false;
+            this.PriceTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PriceTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PriceTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PriceTb.LineThickness = 3;
+            this.PriceTb.Location = new System.Drawing.Point(661, 245);
+            this.PriceTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.PriceTb.Name = "PriceTb";
+            this.PriceTb.Size = new System.Drawing.Size(267, 36);
+            this.PriceTb.TabIndex = 64;
+            this.PriceTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -745,7 +745,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.bunifuMaterialTextbox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Price);
+            this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MilkSales";
@@ -827,7 +827,7 @@
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Price;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox EmpIdCb;
