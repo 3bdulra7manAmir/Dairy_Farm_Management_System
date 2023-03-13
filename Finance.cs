@@ -65,5 +65,10 @@ namespace Dairy_Farm_Management_System
             obj.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
