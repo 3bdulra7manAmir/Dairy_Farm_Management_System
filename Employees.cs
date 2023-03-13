@@ -61,7 +61,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Employee Saved Successfully");
                     COn.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception Ex)
                 {
