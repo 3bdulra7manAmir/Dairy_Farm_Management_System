@@ -46,11 +46,10 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    //Editing here too
                     string Query = "insert into EmployeeTbl values ('" + EmployeesNameTb.Text + "','" + DOB.Value.Date + "','" + Date.Value.Date + "','" + GenCb.SelectedItem.ToString() + "'," + AddressTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Health issue Saved Successfully");
+                    MessageBox.Show("Employee Saved Successfully");
                     COn.Close();
                     populate();
                     //Clear();
