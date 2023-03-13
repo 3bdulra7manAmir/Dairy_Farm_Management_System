@@ -45,7 +45,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.EmployeesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.DiagnosisTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
             this.EventTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
@@ -258,24 +258,24 @@
             this.label8.TabIndex = 74;
             this.label8.Text = "Phone";
             // 
-            // DiagnosisTb
+            // PhoneTb
             // 
-            this.DiagnosisTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DiagnosisTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DiagnosisTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DiagnosisTb.HintForeColor = System.Drawing.Color.Empty;
-            this.DiagnosisTb.HintText = "";
-            this.DiagnosisTb.isPassword = false;
-            this.DiagnosisTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.DiagnosisTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.DiagnosisTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.DiagnosisTb.LineThickness = 3;
-            this.DiagnosisTb.Location = new System.Drawing.Point(488, 211);
-            this.DiagnosisTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.DiagnosisTb.Name = "DiagnosisTb";
-            this.DiagnosisTb.Size = new System.Drawing.Size(267, 36);
-            this.DiagnosisTb.TabIndex = 73;
-            this.DiagnosisTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PhoneTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PhoneTb.HintText = "";
+            this.PhoneTb.isPassword = false;
+            this.PhoneTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PhoneTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineThickness = 3;
+            this.PhoneTb.Location = new System.Drawing.Point(488, 211);
+            this.PhoneTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(267, 36);
+            this.PhoneTb.TabIndex = 73;
+            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label7
             // 
@@ -401,7 +401,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.EmployeesDGV);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.DiagnosisTb);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EventTb);
             this.Controls.Add(this.label3);
@@ -438,7 +438,7 @@
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2DataGridView EmployeesDGV;
         private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox DiagnosisTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EventTb;
         private System.Windows.Forms.Label label3;
