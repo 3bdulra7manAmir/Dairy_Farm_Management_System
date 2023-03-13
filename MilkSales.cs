@@ -28,8 +28,8 @@ namespace Dairy_Farm_Management_System
             DataTable dt = new DataTable();
             dt.Columns.Add("EmpId", typeof(int));
             dt.Load(Rdr);
-            CowIdCb.ValueMember = "EmpId";
-            CowIdCb.DataSource = dt;
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
             COn.Close();
         }
 

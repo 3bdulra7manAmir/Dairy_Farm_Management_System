@@ -77,7 +77,7 @@
             this.Price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.EmpIdCb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -697,14 +697,14 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(267, 31);
             this.dateTimePicker1.TabIndex = 20;
             // 
-            // CowIdCb
+            // EmpIdCb
             // 
-            this.CowIdCb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CowIdCb.FormattingEnabled = true;
-            this.CowIdCb.Location = new System.Drawing.Point(362, 145);
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(267, 44);
-            this.CowIdCb.TabIndex = 85;
+            this.EmpIdCb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpIdCb.FormattingEnabled = true;
+            this.EmpIdCb.Location = new System.Drawing.Point(362, 145);
+            this.EmpIdCb.Name = "EmpIdCb";
+            this.EmpIdCb.Size = new System.Drawing.Size(267, 44);
+            this.EmpIdCb.TabIndex = 85;
             // 
             // label11
             // 
@@ -724,7 +724,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 800);
-            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.EmpIdCb);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
@@ -830,7 +830,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox Price;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.ComboBox EmpIdCb;
         private System.Windows.Forms.Label label11;
     }
 }
