@@ -76,7 +76,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.EmpIdCb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -690,14 +690,14 @@
             this.label2.TabIndex = 63;
             this.label2.Text = "Date";
             // 
-            // dateTimePicker1
+            // Date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(362, 250);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(267, 31);
-            this.dateTimePicker1.TabIndex = 20;
+            this.Date.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date.Location = new System.Drawing.Point(362, 250);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(267, 31);
+            this.Date.TabIndex = 20;
             // 
             // EmpIdCb
             // 
@@ -728,7 +728,7 @@
             this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.EmpIdCb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.QuantityTb);
@@ -831,7 +831,7 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.ComboBox EmpIdCb;
         private System.Windows.Forms.Label label11;
     }
