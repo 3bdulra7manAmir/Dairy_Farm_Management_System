@@ -133,7 +133,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Milk Sold Successfully");
                     COn.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception Ex)
                 {
