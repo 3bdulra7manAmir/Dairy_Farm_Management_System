@@ -47,7 +47,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.EventTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AddressTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.EmployeesNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -289,24 +289,24 @@
             this.label7.TabIndex = 72;
             this.label7.Text = "Address";
             // 
-            // EventTb
+            // AddressTb
             // 
-            this.EventTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EventTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EventTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EventTb.HintForeColor = System.Drawing.Color.Empty;
-            this.EventTb.HintText = "";
-            this.EventTb.isPassword = false;
-            this.EventTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.EventTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.EventTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.EventTb.LineThickness = 3;
-            this.EventTb.Location = new System.Drawing.Point(854, 211);
-            this.EventTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.EventTb.Name = "EventTb";
-            this.EventTb.Size = new System.Drawing.Size(267, 36);
-            this.EventTb.TabIndex = 71;
-            this.EventTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AddressTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AddressTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AddressTb.HintText = "";
+            this.AddressTb.isPassword = false;
+            this.AddressTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.AddressTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AddressTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.AddressTb.LineThickness = 3;
+            this.AddressTb.Location = new System.Drawing.Point(854, 211);
+            this.AddressTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.AddressTb.Name = "AddressTb";
+            this.AddressTb.Size = new System.Drawing.Size(267, 36);
+            this.AddressTb.TabIndex = 71;
+            this.AddressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -403,7 +403,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.EventTb);
+            this.Controls.Add(this.AddressTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.EmployeesNameTb);
             this.Controls.Add(this.label2);
@@ -440,7 +440,7 @@
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox EventTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AddressTb;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EmployeesNameTb;
         private System.Windows.Forms.Label label2;
