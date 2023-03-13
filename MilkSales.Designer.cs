@@ -72,7 +72,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.ClientNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -626,24 +626,24 @@
             this.label7.TabIndex = 68;
             this.label7.Text = "Client Name";
             // 
-            // bunifuMaterialTextbox3
+            // ClientNameTb
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(963, 245);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(267, 36);
-            this.bunifuMaterialTextbox3.TabIndex = 67;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ClientNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ClientNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.ClientNameTb.HintText = "";
+            this.ClientNameTb.isPassword = false;
+            this.ClientNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.ClientNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.ClientNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.ClientNameTb.LineThickness = 3;
+            this.ClientNameTb.Location = new System.Drawing.Point(963, 245);
+            this.ClientNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ClientNameTb.Name = "ClientNameTb";
+            this.ClientNameTb.Size = new System.Drawing.Size(267, 36);
+            this.ClientNameTb.TabIndex = 67;
+            this.ClientNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -743,7 +743,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
+            this.Controls.Add(this.ClientNameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.label2);
@@ -825,7 +825,7 @@
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox ClientNameTb;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private System.Windows.Forms.Label label2;
