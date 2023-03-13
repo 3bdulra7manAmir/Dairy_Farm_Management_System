@@ -68,5 +68,22 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+        int key = 0;
+        private void EmployeesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EmployeesNameTb.Text = EmployeesDGV.SelectedRows[0].Cells[1].Value.ToString();
+            DOB.Text = EmployeesDGV.SelectedRows[0].Cells[2].Value.ToString();
+            GenCb.SelectedItem = EmployeesDGV.SelectedRows[0].Cells[3].Value.ToString();
+            PhoneTb.Text = EmployeesDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AddressTb.Text = EmployeesDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (EmployeesNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(EmployeesDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
