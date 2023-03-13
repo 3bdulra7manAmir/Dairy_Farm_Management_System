@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.label12 = new System.Windows.Forms.Label();
             this.CowIdCb = new System.Windows.Forms.ComboBox();
@@ -49,7 +49,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.EventTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
-            this.CowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.EmployeesNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -196,26 +196,26 @@
             // 
             // EmployeesDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.EmployeesDGV.ColumnHeadersHeight = 4;
             this.EmployeesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeesDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeesDGV.Location = new System.Drawing.Point(328, 489);
             this.EmployeesDGV.Name = "EmployeesDGV";
@@ -320,24 +320,24 @@
             this.label3.TabIndex = 70;
             this.label3.Text = "Name";
             // 
-            // CowNameTb
+            // EmployeesNameTb
             // 
-            this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CowNameTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CowNameTb.HintText = "";
-            this.CowNameTb.isPassword = false;
-            this.CowNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.CowNameTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CowNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.CowNameTb.LineThickness = 3;
-            this.CowNameTb.Location = new System.Drawing.Point(328, 130);
-            this.CowNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.CowNameTb.Name = "CowNameTb";
-            this.CowNameTb.Size = new System.Drawing.Size(267, 36);
-            this.CowNameTb.TabIndex = 68;
-            this.CowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.EmployeesNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmployeesNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeesNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmployeesNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.EmployeesNameTb.HintText = "";
+            this.EmployeesNameTb.isPassword = false;
+            this.EmployeesNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.EmployeesNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.EmployeesNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.EmployeesNameTb.LineThickness = 3;
+            this.EmployeesNameTb.Location = new System.Drawing.Point(328, 130);
+            this.EmployeesNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.EmployeesNameTb.Name = "EmployeesNameTb";
+            this.EmployeesNameTb.Size = new System.Drawing.Size(267, 36);
+            this.EmployeesNameTb.TabIndex = 68;
+            this.EmployeesNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -405,7 +405,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EventTb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.CowNameTb);
+            this.Controls.Add(this.EmployeesNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -442,7 +442,7 @@
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EventTb;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CowNameTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox EmployeesNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
