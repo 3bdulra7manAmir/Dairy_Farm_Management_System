@@ -129,7 +129,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "update EmployeeTbl set EmpName=" + EmployeesNameTb.Text + ",EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + ";";
+                    string Query = "update EmployeeTbl set EmpName='" + EmployeesNameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Updated Successfully");
