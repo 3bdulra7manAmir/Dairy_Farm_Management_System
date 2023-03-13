@@ -35,6 +35,11 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
+        private void Clear()
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (EmployeesNameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "")
