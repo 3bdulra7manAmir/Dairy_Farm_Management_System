@@ -86,7 +86,7 @@ namespace Dairy_Farm_Management_System
         {
             //P Here
             COn.Open();
-            string query = "select * from ExpenditrueTbl";
+            string query = "select * from IncomeTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, COn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
