@@ -112,5 +112,37 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void ClearInc()
+        {
+            IncAmmount.Text = "";
+            IncPurpCb.SelectedIndex = -1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    COn.Open();
+                    string Query = "insert into ExpenditrueTbl values ('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdLbl.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, COn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved Successfully");
+                    COn.Close();
+                    populateExp();
+                    //ClearInc();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
