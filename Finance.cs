@@ -82,9 +82,17 @@ namespace Dairy_Farm_Management_System
             COn.Close();
         }
 
-        private void Clear()
+        private void populateInc()
         {
-
+            //P Here
+            COn.Open();
+            string query = "select * from ExpenditrueTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, COn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpDGV.DataSource = ds.Tables[0];
+            COn.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
