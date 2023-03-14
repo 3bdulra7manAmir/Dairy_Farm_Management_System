@@ -370,11 +370,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(685, 53);
+            this.label19.Location = new System.Drawing.Point(730, 52);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(176, 37);
+            this.label19.Size = new System.Drawing.Size(197, 40);
             this.label19.TabIndex = 117;
             this.label19.Text = "DashBoard";
             // 
