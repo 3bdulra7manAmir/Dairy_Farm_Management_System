@@ -63,7 +63,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.ExpDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.AmountTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -79,7 +81,7 @@
             this.IncDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.IncAmmount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.IncAmount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.IncPurpCb = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -87,8 +89,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.EmpIdLbl = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -433,6 +433,18 @@
             this.panel9.Size = new System.Drawing.Size(973, 342);
             this.panel9.TabIndex = 140;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DimGray;
+            this.label22.Location = new System.Drawing.Point(389, 52);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 27);
+            this.label22.TabIndex = 153;
+            this.label22.Text = "Filter";
+            // 
             // ExpDGV
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -484,6 +496,15 @@
             this.ExpDGV.ThemeStyle.RowsStyle.Height = 26;
             this.ExpDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(691, 48);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(267, 31);
+            this.dateTimePicker1.TabIndex = 152;
             // 
             // label9
             // 
@@ -611,7 +632,7 @@
             this.panel10.Controls.Add(this.IncDGV);
             this.panel10.Controls.Add(this.label10);
             this.panel10.Controls.Add(this.button2);
-            this.panel10.Controls.Add(this.IncAmmount);
+            this.panel10.Controls.Add(this.IncAmount);
             this.panel10.Controls.Add(this.label11);
             this.panel10.Controls.Add(this.IncPurpCb);
             this.panel10.Controls.Add(this.label12);
@@ -723,24 +744,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // IncAmmount
+            // IncAmount
             // 
-            this.IncAmmount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.IncAmmount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncAmmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.IncAmmount.HintForeColor = System.Drawing.Color.Empty;
-            this.IncAmmount.HintText = "";
-            this.IncAmmount.isPassword = false;
-            this.IncAmmount.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.IncAmmount.LineIdleColor = System.Drawing.Color.Gray;
-            this.IncAmmount.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.IncAmmount.LineThickness = 3;
-            this.IncAmmount.Location = new System.Drawing.Point(19, 236);
-            this.IncAmmount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.IncAmmount.Name = "IncAmmount";
-            this.IncAmmount.Size = new System.Drawing.Size(267, 36);
-            this.IncAmmount.TabIndex = 147;
-            this.IncAmmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.IncAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IncAmount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.IncAmount.HintForeColor = System.Drawing.Color.Empty;
+            this.IncAmount.HintText = "";
+            this.IncAmount.isPassword = false;
+            this.IncAmount.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.IncAmount.LineIdleColor = System.Drawing.Color.Gray;
+            this.IncAmount.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.IncAmount.LineThickness = 3;
+            this.IncAmount.Location = new System.Drawing.Point(19, 236);
+            this.IncAmount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.IncAmount.Name = "IncAmount";
+            this.IncAmount.Size = new System.Drawing.Size(267, 36);
+            this.IncAmount.TabIndex = 147;
+            this.IncAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label11
             // 
@@ -819,27 +840,6 @@
             this.EmpIdLbl.Size = new System.Drawing.Size(34, 37);
             this.EmpIdLbl.TabIndex = 151;
             this.EmpIdLbl.Text = "1";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(389, 52);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 27);
-            this.label22.TabIndex = 153;
-            this.label22.Text = "Filter";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria Math", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(691, 48);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(267, 31);
-            this.dateTimePicker1.TabIndex = 152;
             // 
             // Finance
             // 
@@ -940,7 +940,7 @@
         private Guna.UI2.WinForms.Guna2DataGridView IncDGV;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox IncAmmount;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox IncAmount;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox IncPurpCb;
         private System.Windows.Forms.Label label12;
