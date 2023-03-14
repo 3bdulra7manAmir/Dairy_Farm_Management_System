@@ -381,6 +381,8 @@
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Lime;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Green;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(455, 192);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(200, 100);
