@@ -381,6 +381,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BorderThickness = 1;
             this.guna2Panel1.Location = new System.Drawing.Point(423, 257);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(200, 100);
