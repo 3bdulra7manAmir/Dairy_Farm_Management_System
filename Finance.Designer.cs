@@ -91,6 +91,8 @@
             this.EmpIdLbl = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.EmpIdCb = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -411,7 +413,7 @@
             this.label19.BackColor = System.Drawing.Color.White;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(680, 47);
+            this.label19.Location = new System.Drawing.Point(376, 47);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(225, 37);
             this.label19.TabIndex = 117;
@@ -848,7 +850,7 @@
             this.EmpIdLbl.BackColor = System.Drawing.Color.White;
             this.EmpIdLbl.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmpIdLbl.ForeColor = System.Drawing.Color.DimGray;
-            this.EmpIdLbl.Location = new System.Drawing.Point(1234, 42);
+            this.EmpIdLbl.Location = new System.Drawing.Point(1243, 42);
             this.EmpIdLbl.Name = "EmpIdLbl";
             this.EmpIdLbl.Size = new System.Drawing.Size(34, 37);
             this.EmpIdLbl.TabIndex = 151;
@@ -876,12 +878,41 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
+            // EmpIdCb
+            // 
+            this.EmpIdCb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpIdCb.FormattingEnabled = true;
+            this.EmpIdCb.Items.AddRange(new object[] {
+            "Maintaince",
+            "Food",
+            "Salary",
+            "Tax",
+            "Others"});
+            this.EmpIdCb.Location = new System.Drawing.Point(965, 45);
+            this.EmpIdCb.Name = "EmpIdCb";
+            this.EmpIdCb.Size = new System.Drawing.Size(267, 44);
+            this.EmpIdCb.TabIndex = 155;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DimGray;
+            this.label23.Location = new System.Drawing.Point(838, 53);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(126, 27);
+            this.label23.TabIndex = 154;
+            this.label23.Text = "Employee";
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 800);
+            this.Controls.Add(this.EmpIdCb);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.EmpIdLbl);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
@@ -989,5 +1020,7 @@
         private System.Windows.Forms.DateTimePicker ExpDateFilter;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.ComboBox EmpIdCb;
+        private System.Windows.Forms.Label label23;
     }
 }
