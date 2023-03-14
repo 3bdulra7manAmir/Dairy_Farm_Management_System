@@ -146,7 +146,7 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Income Saved Successfully");
                     COn.Close();
-                    populateExp();
+                    populateInc();
                     ClearInc();
                 }
                 catch (Exception Ex)
