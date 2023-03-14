@@ -18,6 +18,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             populateExp();
             populateInc();
+            FillEmpId();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -117,6 +118,20 @@ namespace Dairy_Farm_Management_System
             var ds = new DataSet();
             sda.Fill(ds);
             ExpDGV.DataSource = ds.Tables[0];
+            COn.Close();
+        }
+
+        private void FillEmpId()
+        {
+            COn.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", COn);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
             COn.Close();
         }
 
