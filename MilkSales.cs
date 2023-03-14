@@ -117,6 +117,11 @@ namespace Dairy_Farm_Management_System
             TotalTb.Text = "";
         }
 
+        private void SaveTransaction()
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || ClientNameTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
