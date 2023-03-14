@@ -374,9 +374,9 @@
             this.label19.ForeColor = System.Drawing.Color.DimGray;
             this.label19.Location = new System.Drawing.Point(685, 53);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(235, 37);
+            this.label19.Size = new System.Drawing.Size(176, 37);
             this.label19.TabIndex = 117;
-            this.label19.Text = "Cows Breeding";
+            this.label19.Text = "DashBoard";
             // 
             // DashBoard
             // 
