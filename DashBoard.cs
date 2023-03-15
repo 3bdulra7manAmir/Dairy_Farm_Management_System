@@ -133,7 +133,7 @@ namespace Dairy_Farm_Management_System
             DataTable dt = new DataTable();
             DataTable dt1 = new DataTable();
             sda.Fill(dt);
-            sda.Fill(dt1);
+            sda1.Fill(dt1);
             HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
             //HighDateLbl.Text = "Rs" + dt.Rows[0][1].ToString();
             HighExpLbl.Text = "Rs" + dt1.Rows[0][1].ToString();
