@@ -502,7 +502,7 @@
             this.panel10.Controls.Add(this.guna2GradientPanel7);
             this.panel10.Location = new System.Drawing.Point(386, 410);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(825, 361);
+            this.panel10.Size = new System.Drawing.Size(739, 378);
             this.panel10.TabIndex = 123;
             // 
             // label9
@@ -511,7 +511,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label9.Location = new System.Drawing.Point(346, 8);
+            this.label9.Location = new System.Drawing.Point(280, 8);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 40);
             this.label9.TabIndex = 120;
@@ -523,9 +523,9 @@
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Green;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(558, 56);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(475, 56);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(253, 161);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(194, 161);
             this.guna2GradientPanel5.TabIndex = 121;
             // 
             // label10
@@ -534,7 +534,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(46, 15);
+            this.label10.Location = new System.Drawing.Point(25, 5);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(145, 40);
             this.label10.TabIndex = 119;
@@ -546,9 +546,9 @@
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Green;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(178, 56);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(175, 56);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(310, 161);
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(279, 161);
             this.guna2GradientPanel6.TabIndex = 120;
             // 
             // label11
@@ -557,7 +557,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(26, 15);
+            this.label11.Location = new System.Drawing.Point(10, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(266, 34);
             this.label11.TabIndex = 119;
@@ -580,7 +580,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(16, 15);
+            this.label12.Location = new System.Drawing.Point(13, 3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(107, 40);
             this.label12.TabIndex = 119;
