@@ -410,7 +410,7 @@
             this.panel9.Controls.Add(this.guna2GradientPanel2);
             this.panel9.Location = new System.Drawing.Point(298, 110);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(489, 283);
+            this.panel9.Size = new System.Drawing.Size(489, 232);
             this.panel9.TabIndex = 120;
             // 
             // label2
@@ -568,7 +568,7 @@
             this.guna2GradientPanel7.BorderRadius = 15;
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.DarkTurquoise;
-            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumSpringGreen;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(15, 56);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.Size = new System.Drawing.Size(168, 161);
