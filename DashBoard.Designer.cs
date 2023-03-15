@@ -421,6 +421,7 @@
             // 
             // panel9
             // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.guna2GradientPanel4);
             this.panel9.Controls.Add(this.guna2GradientPanel3);
