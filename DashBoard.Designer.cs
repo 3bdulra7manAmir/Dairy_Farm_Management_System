@@ -545,7 +545,7 @@
             this.guna2GradientPanel6.BorderRadius = 15;
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.BlueViolet;
-            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.MidnightBlue;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(189, 56);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.Size = new System.Drawing.Size(264, 161);
