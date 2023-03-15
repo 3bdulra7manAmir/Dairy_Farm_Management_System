@@ -18,6 +18,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             Finance();
             Logistic();
+            GetMax();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -131,7 +132,7 @@ namespace Dairy_Farm_Management_System
             //SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditrueTbl", COn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            IncLbl.Text = "Rs" + dt.Rows[0][0].ToString();
+            HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
