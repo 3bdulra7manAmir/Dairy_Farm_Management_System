@@ -78,7 +78,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.HighAmtLbl = new System.Windows.Forms.Label();
             this.HighDateLbl = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.HighExpLbl = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.IncLbl = new System.Windows.Forms.Label();
             this.ExpLbl = new System.Windows.Forms.Label();
@@ -615,7 +615,7 @@
             // 
             this.guna2GradientPanel8.BorderRadius = 15;
             this.guna2GradientPanel8.Controls.Add(this.label24);
-            this.guna2GradientPanel8.Controls.Add(this.label23);
+            this.guna2GradientPanel8.Controls.Add(this.HighExpLbl);
             this.guna2GradientPanel8.Controls.Add(this.label13);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Crimson;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DeepPink;
@@ -685,17 +685,17 @@
             this.HighDateLbl.TabIndex = 121;
             this.HighDateLbl.Text = "Sale Date";
             // 
-            // label23
+            // HighExpLbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(16, 50);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(43, 34);
-            this.label23.TabIndex = 120;
-            this.label23.Text = "Rs";
+            this.HighExpLbl.AutoSize = true;
+            this.HighExpLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighExpLbl.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighExpLbl.ForeColor = System.Drawing.Color.White;
+            this.HighExpLbl.Location = new System.Drawing.Point(16, 50);
+            this.HighExpLbl.Name = "HighExpLbl";
+            this.HighExpLbl.Size = new System.Drawing.Size(43, 34);
+            this.HighExpLbl.TabIndex = 120;
+            this.HighExpLbl.Text = "Rs";
             // 
             // label24
             // 
@@ -896,7 +896,7 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label HighExpLbl;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label HighDateLbl;
