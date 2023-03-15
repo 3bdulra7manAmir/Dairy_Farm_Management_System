@@ -453,11 +453,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(46, 15);
+            this.label3.Location = new System.Drawing.Point(27, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 40);
+            this.label3.Size = new System.Drawing.Size(206, 40);
             this.label3.TabIndex = 119;
-            this.label3.Text = "Finance";
+            this.label3.Text = "Expenditure";
             // 
             // guna2GradientPanel4
             // 
