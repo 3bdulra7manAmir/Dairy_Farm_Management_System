@@ -500,9 +500,9 @@
             this.panel10.Controls.Add(this.guna2GradientPanel5);
             this.panel10.Controls.Add(this.guna2GradientPanel6);
             this.panel10.Controls.Add(this.guna2GradientPanel7);
-            this.panel10.Location = new System.Drawing.Point(389, 472);
+            this.panel10.Location = new System.Drawing.Point(386, 410);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(825, 254);
+            this.panel10.Size = new System.Drawing.Size(825, 361);
             this.panel10.TabIndex = 123;
             // 
             // label9
@@ -582,9 +582,9 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(46, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(145, 40);
+            this.label12.Size = new System.Drawing.Size(107, 40);
             this.label12.TabIndex = 119;
-            this.label12.Text = "Finance";
+            this.label12.Text = "Cows";
             // 
             // DashBoard
             // 
