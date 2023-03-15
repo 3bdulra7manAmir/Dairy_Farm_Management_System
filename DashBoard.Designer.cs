@@ -555,11 +555,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(7, 15);
+            this.label11.Location = new System.Drawing.Point(26, 15);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(304, 40);
+            this.label11.Size = new System.Drawing.Size(266, 34);
             this.label11.TabIndex = 119;
             this.label11.Text = "Milk Stock in Litters";
             // 
