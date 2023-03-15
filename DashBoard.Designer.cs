@@ -546,9 +546,9 @@
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Green;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(287, 56);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(178, 56);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(253, 161);
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(310, 161);
             this.guna2GradientPanel6.TabIndex = 120;
             // 
             // label11
@@ -557,11 +557,11 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(46, 15);
+            this.label11.Location = new System.Drawing.Point(7, 15);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(145, 40);
+            this.label11.Size = new System.Drawing.Size(304, 40);
             this.label11.TabIndex = 119;
-            this.label11.Text = "Finance";
+            this.label11.Text = "Milk Stock in Litters";
             // 
             // guna2GradientPanel7
             // 
