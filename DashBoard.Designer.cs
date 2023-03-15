@@ -84,7 +84,7 @@
             this.ExpLbl = new System.Windows.Forms.Label();
             this.BalLbl = new System.Windows.Forms.Label();
             this.CowNumLbl = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.MilkLbl = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -566,7 +566,7 @@
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 15;
-            this.guna2GradientPanel6.Controls.Add(this.label29);
+            this.guna2GradientPanel6.Controls.Add(this.MilkLbl);
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.BlueViolet;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.MidnightBlue;
@@ -757,17 +757,17 @@
             this.CowNumLbl.TabIndex = 125;
             this.CowNumLbl.Text = "Num";
             // 
-            // label29
+            // MilkLbl
             // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(85, 58);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(103, 44);
-            this.label29.TabIndex = 126;
-            this.label29.Text = "Num";
+            this.MilkLbl.AutoSize = true;
+            this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
+            this.MilkLbl.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MilkLbl.ForeColor = System.Drawing.Color.White;
+            this.MilkLbl.Location = new System.Drawing.Point(85, 58);
+            this.MilkLbl.Name = "MilkLbl";
+            this.MilkLbl.Size = new System.Drawing.Size(103, 44);
+            this.MilkLbl.TabIndex = 126;
+            this.MilkLbl.Text = "Num";
             // 
             // label30
             // 
@@ -906,7 +906,7 @@
         private System.Windows.Forms.Label ExpLbl;
         private System.Windows.Forms.Label BalLbl;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label MilkLbl;
         private System.Windows.Forms.Label CowNumLbl;
     }
 }
