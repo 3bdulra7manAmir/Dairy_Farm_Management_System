@@ -536,9 +536,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(152, 6);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(176, 34);
+            this.label10.Size = new System.Drawing.Size(161, 34);
             this.label10.TabIndex = 119;
-            this.label10.Text = "Expenditure";
+            this.label10.Text = "Employees";
             // 
             // guna2GradientPanel6
             // 
