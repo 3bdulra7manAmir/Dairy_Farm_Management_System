@@ -85,7 +85,7 @@
             this.BalLbl = new System.Windows.Forms.Label();
             this.CowNumLbl = new System.Windows.Forms.Label();
             this.MilkLbl = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.EmpNameLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -542,7 +542,7 @@
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BorderRadius = 15;
-            this.guna2GradientPanel5.Controls.Add(this.label30);
+            this.guna2GradientPanel5.Controls.Add(this.EmpNameLbl);
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Crimson;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.DeepPink;
@@ -769,17 +769,17 @@
             this.MilkLbl.TabIndex = 126;
             this.MilkLbl.Text = "Num";
             // 
-            // label30
+            // EmpNameLbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(15, 78);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(208, 44);
-            this.label30.TabIndex = 127;
-            this.label30.Text = "EmpName";
+            this.EmpNameLbl.AutoSize = true;
+            this.EmpNameLbl.BackColor = System.Drawing.Color.Transparent;
+            this.EmpNameLbl.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpNameLbl.ForeColor = System.Drawing.Color.White;
+            this.EmpNameLbl.Location = new System.Drawing.Point(15, 78);
+            this.EmpNameLbl.Name = "EmpNameLbl";
+            this.EmpNameLbl.Size = new System.Drawing.Size(208, 44);
+            this.EmpNameLbl.TabIndex = 127;
+            this.EmpNameLbl.Text = "EmpName";
             // 
             // DashBoard
             // 
@@ -905,7 +905,7 @@
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label ExpLbl;
         private System.Windows.Forms.Label BalLbl;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label EmpNameLbl;
         private System.Windows.Forms.Label MilkLbl;
         private System.Windows.Forms.Label CowNumLbl;
     }
