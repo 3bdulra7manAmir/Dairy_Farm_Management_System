@@ -571,7 +571,7 @@
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Green;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(15, 56);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
-            this.guna2GradientPanel7.Size = new System.Drawing.Size(253, 161);
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(144, 161);
             this.guna2GradientPanel7.TabIndex = 118;
             // 
             // label12
@@ -580,7 +580,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(46, 15);
+            this.label12.Location = new System.Drawing.Point(16, 15);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(107, 40);
             this.label12.TabIndex = 119;
