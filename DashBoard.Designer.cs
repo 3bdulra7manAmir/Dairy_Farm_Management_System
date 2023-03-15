@@ -82,6 +82,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -476,6 +477,7 @@
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BorderRadius = 15;
+            this.guna2GradientPanel4.Controls.Add(this.label27);
             this.guna2GradientPanel4.Controls.Add(this.label7);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.DeepPink;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.MediumVioletRed;
@@ -722,6 +724,18 @@
             this.label26.TabIndex = 123;
             this.label26.Text = "Rs";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(98, 47);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 44);
+            this.label27.TabIndex = 124;
+            this.label27.Text = "Rs";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -844,5 +858,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }
