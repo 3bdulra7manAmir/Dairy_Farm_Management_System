@@ -111,20 +111,17 @@ namespace Dairy_Farm_Management_System
             COn.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", COn);
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(TotalMilk) from MilkTbl", COn);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(TotalMilk) from EmployeeTbl", COn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             CowNumLbl.Text = dt.Rows[0][0].ToString();
-            //int inc, exp;
-            //double bal;
-            //inc = Convert.ToInt32(dt.Rows[0][0].ToString());
-            //IncLbl.Text = "Rs" + dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
             MilkLbl.Text = dt1.Rows[0][0].ToString() + "Liters";
-            /*exp = Convert.ToInt32(dt1.Rows[0][0].ToString());
-            bal = inc - exp;
-            ExpLbl.Text = "Rs" + dt1.Rows[0][0].ToString();
-            BalLbl.Text = "Rs" + bal;*/
+
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            EmpNumLbl.Text = dt2.Rows[0][0].ToString() + "Liters";
             COn.Close();
         }
 
