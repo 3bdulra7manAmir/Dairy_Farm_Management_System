@@ -82,8 +82,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.IncLbl = new System.Windows.Forms.Label();
             this.ExpLbl = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.BalLbl = new System.Windows.Forms.Label();
+            this.CowNumLbl = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -482,7 +482,7 @@
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BorderRadius = 15;
-            this.guna2GradientPanel4.Controls.Add(this.label27);
+            this.guna2GradientPanel4.Controls.Add(this.BalLbl);
             this.guna2GradientPanel4.Controls.Add(this.label7);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.DeepPink;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.MediumVioletRed;
@@ -590,7 +590,7 @@
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BorderRadius = 15;
-            this.guna2GradientPanel7.Controls.Add(this.label28);
+            this.guna2GradientPanel7.Controls.Add(this.CowNumLbl);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.DarkTurquoise;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumSpringGreen;
@@ -733,29 +733,29 @@
             this.ExpLbl.TabIndex = 123;
             this.ExpLbl.Text = "Rs";
             // 
-            // label27
+            // BalLbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(98, 47);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 44);
-            this.label27.TabIndex = 124;
-            this.label27.Text = "Rs";
+            this.BalLbl.AutoSize = true;
+            this.BalLbl.BackColor = System.Drawing.Color.Transparent;
+            this.BalLbl.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BalLbl.ForeColor = System.Drawing.Color.White;
+            this.BalLbl.Location = new System.Drawing.Point(98, 47);
+            this.BalLbl.Name = "BalLbl";
+            this.BalLbl.Size = new System.Drawing.Size(55, 44);
+            this.BalLbl.TabIndex = 124;
+            this.BalLbl.Text = "Rs";
             // 
-            // label28
+            // CowNumLbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(47, 58);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(103, 44);
-            this.label28.TabIndex = 125;
-            this.label28.Text = "Num";
+            this.CowNumLbl.AutoSize = true;
+            this.CowNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.CowNumLbl.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowNumLbl.ForeColor = System.Drawing.Color.White;
+            this.CowNumLbl.Location = new System.Drawing.Point(47, 58);
+            this.CowNumLbl.Name = "CowNumLbl";
+            this.CowNumLbl.Size = new System.Drawing.Size(103, 44);
+            this.CowNumLbl.TabIndex = 125;
+            this.CowNumLbl.Text = "Num";
             // 
             // label29
             // 
@@ -904,9 +904,9 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label ExpLbl;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label BalLbl;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label CowNumLbl;
     }
 }
