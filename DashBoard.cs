@@ -86,7 +86,11 @@ namespace Dairy_Farm_Management_System
         {
             //
             COn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*)");
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", COn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            IncLbl.Text = dt.Rows[0][0].ToString();
+            COn.Close();
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
