@@ -121,7 +121,7 @@ namespace Dairy_Farm_Management_System
 
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
-            EmpNumLbl.Text = dt2.Rows[0][0].ToString() + "Liters";
+            EmpNumLbl.Text = dt2.Rows[0][0].ToString();
             COn.Close();
         }
 
