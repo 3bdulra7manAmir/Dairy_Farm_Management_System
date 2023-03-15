@@ -76,7 +76,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.HighAmt = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -640,7 +640,7 @@
             // 
             this.guna2GradientPanel9.BorderRadius = 15;
             this.guna2GradientPanel9.Controls.Add(this.label22);
-            this.guna2GradientPanel9.Controls.Add(this.label21);
+            this.guna2GradientPanel9.Controls.Add(this.HighAmt);
             this.guna2GradientPanel9.Controls.Add(this.label20);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.DodgerBlue;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.RoyalBlue;
@@ -661,17 +661,17 @@
             this.label20.TabIndex = 119;
             this.label20.Text = "Highest Sale";
             // 
-            // label21
+            // HighAmt
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(3, 50);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(43, 34);
-            this.label21.TabIndex = 120;
-            this.label21.Text = "Rs";
+            this.HighAmt.AutoSize = true;
+            this.HighAmt.BackColor = System.Drawing.Color.Transparent;
+            this.HighAmt.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HighAmt.ForeColor = System.Drawing.Color.White;
+            this.HighAmt.Location = new System.Drawing.Point(3, 50);
+            this.HighAmt.Name = "HighAmt";
+            this.HighAmt.Size = new System.Drawing.Size(43, 34);
+            this.HighAmt.TabIndex = 120;
+            this.HighAmt.Text = "Rs";
             // 
             // label22
             // 
@@ -900,7 +900,7 @@
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label HighAmt;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label ExpLbl;
