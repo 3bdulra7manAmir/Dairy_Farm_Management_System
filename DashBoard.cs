@@ -88,7 +88,7 @@ namespace Dairy_Farm_Management_System
             //
             COn.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", COn);
-            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditureTbl", COn);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditrueTbl", COn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             IncLbl.Text = dt.Rows[0][0].ToString();
