@@ -478,9 +478,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(46, 15);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 40);
+            this.label7.Size = new System.Drawing.Size(150, 40);
             this.label7.TabIndex = 119;
-            this.label7.Text = "Finance";
+            this.label7.Text = "Balance";
             // 
             // label8
             // 
