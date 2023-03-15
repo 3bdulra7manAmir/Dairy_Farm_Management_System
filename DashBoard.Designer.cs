@@ -421,9 +421,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(46, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 40);
+            this.label2.Size = new System.Drawing.Size(139, 40);
             this.label2.TabIndex = 119;
-            this.label2.Text = "Finance";
+            this.label2.Text = "Income";
             // 
             // guna2GradientPanel2
             // 
