@@ -98,5 +98,10 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

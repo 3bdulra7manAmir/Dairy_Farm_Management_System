@@ -264,6 +264,7 @@
             this.label16.Size = new System.Drawing.Size(166, 34);
             this.label16.TabIndex = 9;
             this.label16.Text = "Dashboard";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel6
             // 
