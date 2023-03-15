@@ -111,7 +111,7 @@ namespace Dairy_Farm_Management_System
             COn.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", COn);
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(TotalMilk) from MilkTbl", COn);
-            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(TotalMilk) from EmployeeTbl", COn);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(*) from EmployeeTbl", COn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             CowNumLbl.Text = dt.Rows[0][0].ToString();
