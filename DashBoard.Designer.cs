@@ -80,7 +80,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.IncLbl = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -444,7 +444,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BorderRadius = 15;
-            this.guna2GradientPanel2.Controls.Add(this.label25);
+            this.guna2GradientPanel2.Controls.Add(this.IncLbl);
             this.guna2GradientPanel2.Controls.Add(this.label2);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Green;
@@ -706,17 +706,17 @@
             this.label24.TabIndex = 121;
             this.label24.Text = "Exp Date";
             // 
-            // label25
+            // IncLbl
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(62, 46);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(55, 44);
-            this.label25.TabIndex = 122;
-            this.label25.Text = "Rs";
+            this.IncLbl.AutoSize = true;
+            this.IncLbl.BackColor = System.Drawing.Color.Transparent;
+            this.IncLbl.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncLbl.ForeColor = System.Drawing.Color.White;
+            this.IncLbl.Location = new System.Drawing.Point(62, 46);
+            this.IncLbl.Name = "IncLbl";
+            this.IncLbl.Size = new System.Drawing.Size(55, 44);
+            this.IncLbl.TabIndex = 122;
+            this.IncLbl.Text = "Rs";
             // 
             // label26
             // 
@@ -899,7 +899,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label30;
