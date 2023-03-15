@@ -129,11 +129,14 @@ namespace Dairy_Farm_Management_System
         private void GetMax()
         {
             SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt,IncDate) from IncomeTbl", COn);
-            //SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditrueTbl", COn);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl", COn);
             DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
             sda.Fill(dt);
+            sda.Fill(dt1);
             HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
-            HighDateLbl.Text = "Rs" + dt.Rows[0][1].ToString();
+            //HighDateLbl.Text = "Rs" + dt.Rows[0][1].ToString();
+            HighExpLbl.Text = "Rs" + dt1.Rows[0][1].ToString();
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
