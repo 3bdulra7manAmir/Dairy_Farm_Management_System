@@ -627,7 +627,7 @@
             this.guna2GradientPanel9.Controls.Add(this.label22);
             this.guna2GradientPanel9.Controls.Add(this.label21);
             this.guna2GradientPanel9.Controls.Add(this.label20);
-            this.guna2GradientPanel9.FillColor = System.Drawing.Color.Crimson;
+            this.guna2GradientPanel9.FillColor = System.Drawing.Color.DodgerBlue;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DeepPink;
             this.guna2GradientPanel9.Location = new System.Drawing.Point(309, 569);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
