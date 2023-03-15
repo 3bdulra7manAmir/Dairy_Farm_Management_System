@@ -83,6 +83,9 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -536,6 +539,7 @@
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BorderRadius = 15;
+            this.guna2GradientPanel5.Controls.Add(this.label30);
             this.guna2GradientPanel5.Controls.Add(this.label10);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Crimson;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.DeepPink;
@@ -559,6 +563,7 @@
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 15;
+            this.guna2GradientPanel6.Controls.Add(this.label29);
             this.guna2GradientPanel6.Controls.Add(this.label11);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.BlueViolet;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.MidnightBlue;
@@ -582,6 +587,7 @@
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BorderRadius = 15;
+            this.guna2GradientPanel7.Controls.Add(this.label28);
             this.guna2GradientPanel7.Controls.Add(this.label12);
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.DarkTurquoise;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumSpringGreen;
@@ -596,7 +602,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(34, 5);
+            this.label12.Location = new System.Drawing.Point(57, 5);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(91, 34);
             this.label12.TabIndex = 119;
@@ -736,6 +742,42 @@
             this.label27.TabIndex = 124;
             this.label27.Text = "Rs";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(47, 58);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(103, 44);
+            this.label28.TabIndex = 125;
+            this.label28.Text = "Num";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(85, 58);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(103, 44);
+            this.label29.TabIndex = 126;
+            this.label29.Text = "Num";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(72, 66);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(103, 44);
+            this.label30.TabIndex = 127;
+            this.label30.Text = "Num";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -859,5 +901,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
     }
 }
