@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
         public DashBoard()
         {
             InitializeComponent();
+            Finance();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
