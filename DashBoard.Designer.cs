@@ -604,7 +604,7 @@
             this.guna2GradientPanel8.Controls.Add(this.label13);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Crimson;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DeepPink;
-            this.guna2GradientPanel8.Location = new System.Drawing.Point(835, 563);
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(847, 569);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.Size = new System.Drawing.Size(367, 180);
             this.guna2GradientPanel8.TabIndex = 122;
@@ -615,11 +615,11 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(106, 6);
+            this.label13.Location = new System.Drawing.Point(56, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(161, 34);
+            this.label13.Size = new System.Drawing.Size(285, 34);
             this.label13.TabIndex = 119;
-            this.label13.Text = "Employees";
+            this.label13.Text = "Highest Expenditure";
             // 
             // guna2GradientPanel9
             // 
@@ -629,7 +629,7 @@
             this.guna2GradientPanel9.Controls.Add(this.label20);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.Crimson;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DeepPink;
-            this.guna2GradientPanel9.Location = new System.Drawing.Point(309, 563);
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(309, 569);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
             this.guna2GradientPanel9.Size = new System.Drawing.Size(395, 180);
             this.guna2GradientPanel9.TabIndex = 122;
@@ -642,9 +642,9 @@
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(96, 6);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(161, 34);
+            this.label20.Size = new System.Drawing.Size(181, 34);
             this.label20.TabIndex = 119;
-            this.label20.Text = "Employees";
+            this.label20.Text = "Highest Sale";
             // 
             // label21
             // 
@@ -654,9 +654,9 @@
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(3, 50);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(161, 34);
+            this.label21.Size = new System.Drawing.Size(43, 34);
             this.label21.TabIndex = 120;
-            this.label21.Text = "Employees";
+            this.label21.Text = "Rs";
             // 
             // label22
             // 
@@ -664,11 +664,11 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(96, 116);
+            this.label22.Location = new System.Drawing.Point(117, 129);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(161, 34);
+            this.label22.Size = new System.Drawing.Size(148, 34);
             this.label22.TabIndex = 121;
-            this.label22.Text = "Employees";
+            this.label22.Text = "Sale Date";
             // 
             // label23
             // 
@@ -678,9 +678,9 @@
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(16, 50);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(161, 34);
+            this.label23.Size = new System.Drawing.Size(43, 34);
             this.label23.TabIndex = 120;
-            this.label23.Text = "Employees";
+            this.label23.Text = "Rs";
             // 
             // label24
             // 
@@ -688,11 +688,11 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(102, 129);
+            this.label24.Location = new System.Drawing.Point(129, 129);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(161, 34);
+            this.label24.Size = new System.Drawing.Size(138, 34);
             this.label24.TabIndex = 121;
-            this.label24.Text = "Employees";
+            this.label24.Text = "Exp Date";
             // 
             // DashBoard
             // 
