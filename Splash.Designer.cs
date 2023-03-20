@@ -60,13 +60,13 @@
             // 
             // MyPrograss
             // 
-            this.MyPrograss.BackColor = System.Drawing.Color.White;
+            this.MyPrograss.BackColor = System.Drawing.Color.Gray;
             this.MyPrograss.BorderRadius = 5;
             this.MyPrograss.Location = new System.Drawing.Point(-1, 781);
             this.MyPrograss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MyPrograss.MaximumValue = 100;
             this.MyPrograss.Name = "MyPrograss";
-            this.MyPrograss.ProgressColor = System.Drawing.Color.Teal;
+            this.MyPrograss.ProgressColor = System.Drawing.Color.White;
             this.MyPrograss.Size = new System.Drawing.Size(1282, 20);
             this.MyPrograss.TabIndex = 2;
             this.MyPrograss.Value = 0;
