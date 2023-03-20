@@ -80,5 +80,10 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
