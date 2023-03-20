@@ -38,7 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UnameTb = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.RoleCb = new System.Windows.Forms.ComboBox();
@@ -142,14 +142,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Password";
             // 
-            // textBox1
+            // UnameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(557, 289);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 44);
-            this.textBox1.TabIndex = 6;
+            this.UnameTb.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnameTb.Location = new System.Drawing.Point(557, 289);
+            this.UnameTb.Multiline = true;
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(223, 44);
+            this.UnameTb.TabIndex = 6;
             // 
             // contextMenuStrip1
             // 
@@ -214,7 +214,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UnameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -242,7 +242,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UnameTb;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox RoleCb;
