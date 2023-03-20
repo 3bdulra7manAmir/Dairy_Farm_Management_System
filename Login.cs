@@ -26,43 +26,54 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(RoleCb.SelectedIndex == -1)
+            if(UnameTb.Text == "" || PasswordTb.Text == "")
             {
-                MessageBox.Show("Selecte a Role");
-            }
-            if(PasswordTb.Text == "" || UnameTb.Text == "")
-            {
-                MessageBox.Show("Enter Admin Name and Password");
-            }
-            if(RoleCb.SelectedItem.ToString() == "Admin")
-            {
-                Employees emp = new Employees();
-                emp.Show();
-                this.Hide();
+                MessageBox.Show("Enter The Username And Password");
             }
             else
             {
-                MessageBox.Show("Wrong Admin name and Password");
-            }
-            if(RoleCb.SelectedItem.ToString() == "Employee")
-            {
-                COn.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from EmployeeTbl where EmpName= '" + UnameTb.Text + "' and EmpPass='" + PasswordTb.Text + "'", COn);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                if (dt.Rows[0][0].ToString() == "1")
+                if (RoleCb.SelectedIndex > -1)
                 {
-                    Cows Cow = new Cows();
-                    Cow.Show();
-                    this.Hide();
-                    COn.Close();
+                    if (RoleCb.SelectedItem.ToString() == "Admin")
+                    {
+                        if (PasswordTb.Text == "Admin" && UnameTb.Text == "Admin")
+                        {
+                            Employees prod = new Employees();
+                            prod.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("If You are the Admin Enter the Correct ID and Password");
+                        }
+                    }
+                    else //here
+                    {
+                        COn.Open();
+                        SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from EmployeeTbl where EmpName= '" + UnameTb.Text + "' and EmpPass='" + PasswordTb.Text + "'", COn);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        if (dt.Rows[0][0].ToString() == "1")
+                        {
+                            Cows Cow = new Cows();
+                            Cow.Show();
+                            this.Hide();
+                            COn.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wrong UserName or Password");
+                        }
+                        COn.Close();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Wrong UserName or Password");
+                    MessageBox.Show("Select a Role");
                 }
-                COn.Close();
             }
+
+            
         }
 
         private void PasswordTb_TextChanged(object sender, EventArgs e)
