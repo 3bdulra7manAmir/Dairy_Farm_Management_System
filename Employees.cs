@@ -78,6 +78,7 @@ namespace Dairy_Farm_Management_System
             GenCb.SelectedItem = EmployeesDGV.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTb.Text = EmployeesDGV.SelectedRows[0].Cells[4].Value.ToString();
             AddressTb.Text = EmployeesDGV.SelectedRows[0].Cells[5].Value.ToString();
+            EmpPassTb.Text = EmployeesDGV.SelectedRows[0].Cells[6].Value.ToString();
             if (EmployeesNameTb.Text == "")
             {
                 key = 0;
@@ -130,7 +131,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     COn.Open();
-                    string Query = "update EmployeeTbl set EmpName='" + EmployeesNameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + ";";
+                    string Query = "update EmployeeTbl set EmpName='" + EmployeesNameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "',EmpPass='" + EmpPassTb.Text +"' where EmpId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, COn);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Updated Successfully");
