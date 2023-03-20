@@ -42,6 +42,7 @@ namespace Dairy_Farm_Management_System
             AddressTb.Text = "";
             GenCb.SelectedIndex = -1;
             key = 0;
+            EmpPassTb.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
