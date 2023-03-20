@@ -25,7 +25,10 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(RoleCb.)
+            if(RoleCb.SelectedItem.ToString() == "Admin")
+            {
+
+            }
         }
     }
 }
