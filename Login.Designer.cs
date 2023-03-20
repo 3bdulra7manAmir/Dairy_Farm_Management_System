@@ -166,6 +166,7 @@
             this.PasswordTb.PasswordChar = '#';
             this.PasswordTb.Size = new System.Drawing.Size(223, 44);
             this.PasswordTb.TabIndex = 8;
+            this.PasswordTb.TextChanged += new System.EventHandler(this.PasswordTb_TextChanged);
             // 
             // RoleCb
             // 

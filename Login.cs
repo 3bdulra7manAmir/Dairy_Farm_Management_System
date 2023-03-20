@@ -48,7 +48,26 @@ namespace Dairy_Farm_Management_System
             {
                 COn.Open();
                 SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) from EmployeeTbl where EmpName= '" + UnameTb.Text + "' and EmpPass='" + PasswordTb.Text + "'", COn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    Cows Cow = new Cows();
+                    Cow.Show();
+                    this.Hide();
+                    COn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong UserName or Password");
+                }
+                COn.Close();
             }
+        }
+
+        private void PasswordTb_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
