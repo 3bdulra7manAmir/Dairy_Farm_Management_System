@@ -71,6 +71,10 @@
             this.MyProgramName.TabIndex = 2;
             this.MyProgramName.Value = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);

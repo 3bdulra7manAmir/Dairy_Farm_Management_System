@@ -16,5 +16,10 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
+        int startpoint = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
