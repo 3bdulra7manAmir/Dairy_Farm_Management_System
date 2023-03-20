@@ -19,7 +19,16 @@ namespace Dairy_Farm_Management_System
         int startpoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            startpoint += 1;
+            MyPrograss.Value = startpoint;
+            if(MyPrograss.Value == 100)
+            {
+                MyPrograss.Value = 0;
+                timer1.Stop();
+                Login log = new Login();
+                this.Hide();
+                log.Show();
+            }
         }
     }
 }

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.MyProgramName = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.MyPrograss = new Bunifu.Framework.UI.BunifuProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,18 +58,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Dairy Farm Software";
             // 
-            // MyProgramName
+            // MyPrograss
             // 
-            this.MyProgramName.BackColor = System.Drawing.Color.White;
-            this.MyProgramName.BorderRadius = 5;
-            this.MyProgramName.Location = new System.Drawing.Point(-1, 780);
-            this.MyProgramName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MyProgramName.MaximumValue = 100;
-            this.MyProgramName.Name = "MyProgramName";
-            this.MyProgramName.ProgressColor = System.Drawing.Color.Teal;
-            this.MyProgramName.Size = new System.Drawing.Size(1282, 20);
-            this.MyProgramName.TabIndex = 2;
-            this.MyProgramName.Value = 0;
+            this.MyPrograss.BackColor = System.Drawing.Color.White;
+            this.MyPrograss.BorderRadius = 5;
+            this.MyPrograss.Location = new System.Drawing.Point(-1, 781);
+            this.MyPrograss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MyPrograss.MaximumValue = 100;
+            this.MyPrograss.Name = "MyPrograss";
+            this.MyPrograss.ProgressColor = System.Drawing.Color.Teal;
+            this.MyPrograss.Size = new System.Drawing.Size(1282, 20);
+            this.MyPrograss.TabIndex = 2;
+            this.MyPrograss.Value = 0;
             // 
             // timer1
             // 
@@ -81,7 +81,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1280, 800);
-            this.Controls.Add(this.MyProgramName);
+            this.Controls.Add(this.MyPrograss);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -98,7 +98,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuProgressBar MyProgramName;
+        private Bunifu.Framework.UI.BunifuProgressBar MyPrograss;
         private System.Windows.Forms.Timer timer1;
     }
 }
