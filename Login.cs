@@ -16,5 +16,11 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            UnameTb.Text = "";
+            PasswordTb.Text = "";
+        }
     }
 }
