@@ -148,5 +148,20 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void panel8_Paint(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashBoard_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmpNumLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

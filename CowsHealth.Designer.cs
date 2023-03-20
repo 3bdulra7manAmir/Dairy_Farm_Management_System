@@ -482,6 +482,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(289, 65);
             this.panel8.TabIndex = 14;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox7
             // 

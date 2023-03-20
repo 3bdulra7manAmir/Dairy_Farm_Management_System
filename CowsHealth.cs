@@ -250,5 +250,10 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
