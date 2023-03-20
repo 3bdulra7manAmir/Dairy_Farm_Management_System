@@ -55,7 +55,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.EmpPassTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeesDGV)).BeginInit();
             this.panel1.SuspendLayout();
@@ -403,24 +403,24 @@
             this.label4.TabIndex = 91;
             this.label4.Text = "Password";
             // 
-            // bunifuMaterialTextbox1
+            // EmpPassTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(978, 216);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(267, 36);
-            this.bunifuMaterialTextbox1.TabIndex = 90;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.EmpPassTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmpPassTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpPassTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmpPassTb.HintForeColor = System.Drawing.Color.Empty;
+            this.EmpPassTb.HintText = "";
+            this.EmpPassTb.isPassword = false;
+            this.EmpPassTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.EmpPassTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.EmpPassTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.EmpPassTb.LineThickness = 3;
+            this.EmpPassTb.Location = new System.Drawing.Point(978, 216);
+            this.EmpPassTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.EmpPassTb.Name = "EmpPassTb";
+            this.EmpPassTb.Size = new System.Drawing.Size(267, 36);
+            this.EmpPassTb.TabIndex = 90;
+            this.EmpPassTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Employees
             // 
@@ -428,7 +428,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 800);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.EmpPassTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.GenCb);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -488,6 +488,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox EmpPassTb;
     }
 }
